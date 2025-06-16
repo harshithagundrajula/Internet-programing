@@ -1,0 +1,56 @@
+# Online Hotel Room Booking
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Hotel Room Booking</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Hotel</h1>
+        <nav>
+            <ul>
+                <li><a href="#rooms">Rooms</a></li>
+                <li><a href="#booking">Booking</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="rooms">
+        <h2>Available Rooms</h2>
+        <div class="room">
+            <h3>Deluxe Room</h3>
+            <p>Price: $150 per night</p>
+            <button>Book Now</button>
+        </div>
+        <div class="room">
+            <h3>Standard Room</h3>
+            <p>Price: $100 per night</p>
+            <button>Book Now</button>
+        </div>
+    </section>
+
+    <section id="booking">
+        <h2>Book Your Room</h2>
+        <form action="submit_booking.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+            <button type="submit">Confirm Booking</button>
+        </form>
+    </section>
+
+    <footer>
+        <h2>Contact Us</h2>
+        <p>Email: info@hotel.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </footer>
+</body>
+</html>
